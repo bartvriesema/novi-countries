@@ -10,6 +10,12 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 35px;
+}
+
 .world-map {
     display: flex;
     flex-direction: column;
@@ -19,7 +25,8 @@ h1 {
 }
 
 .world-map img {
-    width: 60%;
+    /*width: 50%;*/
+    max-height: 400px;
 }
 
 figcaption {
@@ -50,6 +57,16 @@ li {
     padding: 10px;
 }
 
+.country-flag {
+    height: 40px;
+}
+
+.back-text {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
 li img {
     height: 40px;
 }
@@ -59,26 +76,65 @@ span {
     font-size: 25px;
 }
 
-.red {
+.asia {
     color: indianred;
 }
 
-.blue {
+.africa {
     color: royalblue;
 }
 
-.green {
+.americas {
     color: forestgreen;
 }
 
-.yellow {
+.europe {
     color: goldenrod;
 }
 
-.purple {
+.oceania {
     color: purple;
 }
 
-.pink {
-    color: hotpink;
+#country-info-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#country-search-button {
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+#country-search-text {
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+    background-color: white;
+    font-size: 25px;
+}
+
+#country-not-found-warning {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    color: red;
 }

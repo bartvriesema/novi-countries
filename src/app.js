@@ -1,32 +1,9 @@
 import axios from "axios";
 
-function setContinentColor(regionName) {
-    switch (regionName) {
-        case 'Africa':
-            return 'blue';
-            break;
-        case 'Americas':
-            return 'green';
-            break;
-        case 'Asia':
-            return 'red';
-            break;
-        case 'Europe':
-            return 'yellow';
-            break;
-        case 'Oceania':
-            return 'purple';
-            break;
-        default:
-            return 'pink';
-            break;
-    }
-}
-
 async function getCountries() {
     try {
         const countryList = await axios.get("https://restcountries.com/v2/all");
-        return countryList.data;
+        createCountryList(countryList.data);
 
     } catch (e) {
         console.error(e);
@@ -34,8 +11,7 @@ async function getCountries() {
 
 }
 
-async function createCountryList() {
-    let countriesList = await getCountries();
+function createCountryList(countriesList) {
     const listOfCountries = document.getElementById("list-of-countries");
 
     countriesList.sort((a,b) => {
@@ -43,11 +19,10 @@ async function createCountryList() {
     });
 
     const countryItems = countriesList.map((country) => {
-        let countryColor = setContinentColor(country.region);
         return `
         <li>
-            <span class=${countryColor}>
-                <img src="${country.flags.png}" alt="Flag of ${country.name}">
+            <span class=${country.region.toLowerCase()}>
+                <img class="country-flag" src="${country.flags.png}" alt="Flag of ${country.name}">
                 ${country.name}
             </span>
             Has a population of ${country.population} people
@@ -59,4 +34,4 @@ async function createCountryList() {
 
 }
 
-createCountryList().then();
+getCountries();
