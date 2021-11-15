@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 35px;
+}
+
+.world-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.world-map img {
+    /*width: 50%;*/
+    max-height: 400px;
+}
+
+figcaption {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+}
+
+.country-list {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-color: ghostwhite;
+}
+
+.country-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Architects Daughter', cursive;
+    list-style: none;
+}
+
+li {
+    flex-basis: 30%;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.country-flag {
+    height: 40px;
+}
+
+.back-text {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+li img {
+    height: 40px;
+}
+
+span {
+    display: block;
+    font-size: 25px;
+}
+
+.asia {
+    color: indianred;
+}
+
+.africa {
+    color: royalblue;
+}
+
+.americas {
+    color: forestgreen;
+}
+
+.europe {
+    color: goldenrod;
+}
+
+.oceania {
+    color: purple;
+}
+
+#country-info-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#country-search-button {
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+#country-search-text {
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+    background-color: white;
+    font-size: 25px;
+}
+
+#country-not-found-warning {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    color: red;
+}

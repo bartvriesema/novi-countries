@@ -1,0 +1,84 @@
+@import "https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap";
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.world-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.world-map img {
+    width: 60%;
+}
+
+figcaption {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+}
+
+.country-list {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-color: ghostwhite;
+}
+
+.country-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Architects Daughter', cursive;
+    list-style: none;
+}
+
+li {
+    flex-basis: 30%;
+    min-width: 300px;
+    padding: 10px;
+}
+
+li img {
+    height: 40px;
+}
+
+span {
+    display: block;
+    font-size: 25px;
+}
+
+.red {
+    color: indianred;
+}
+
+.blue {
+    color: royalblue;
+}
+
+.green {
+    color: forestgreen;
+}
+
+.yellow {
+    color: goldenrod;
+}
+
+.purple {
+    color: purple;
+}
+
+.pink {
+    color: hotpink;
+}
+/*# sourceMappingURL=index.be5cf2f4.css.map */
